@@ -11,14 +11,14 @@
   font-family: "Edu TAS Beginner", cursive;
   font-optical-sizing: auto;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 4rem;
   
 }
 
 .mono {
   font-family: "Sometype Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: normal;
   font-style: normal;
 }
 

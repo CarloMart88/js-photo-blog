@@ -10,10 +10,12 @@
 #edu {
   font-family: "Edu TAS Beginner", cursive;
   font-optical-sizing: auto;
-  font-weight: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
   
 }
 
 #wall {
   background-image: url("../img/wall.png");
+  
 }

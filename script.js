@@ -1,7 +1,5 @@
 const lista = document.getElementById('lista')
-const date = document.getElementById('date')
-const title = document.getElementById('title')
-const immagine = document.getElementById('immagine') 
+ 
 
 
 
@@ -20,10 +18,10 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
 
   const card = `
 
-     <div class="col-12 col-md-6 col-lg-4">
+     <div class="col-12 col-md-6 col-lg-4 immagine">
           <div class="card position-relative">
             <img src="./assets1/img/pin.svg" class="position-absolute top-0 start-50 translate-middle">
-            <img src="${url}" class="card-img-top" id="immagine">
+            <img src="${url}" class="card-img-top">
               <div class="card-body">
                 <p class="card-text mono" id="date">Data:${date}</p>
                 <p class="card-text" id="title" >${title}</p>
@@ -33,7 +31,14 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
   
   ` 
     lista.innerHTML += card}
- 
-})
+    
+    //recupero le immagini 
+    const immagini = document.querySelectorAll('.immagine')
+    
+    console.log(immagini)
+    
+    
 
+  })
+  
 

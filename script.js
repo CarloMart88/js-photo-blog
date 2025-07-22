@@ -25,7 +25,7 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
             <img src="./assets1/img/pin.svg" class="position-absolute top-0 start-50 translate-middle">
             <img src="${url}" class="card-img-top" id="immagine">
               <div class="card-body">
-                <p class="card-text mono" id="date">${date}</p>
+                <p class="card-text mono" id="date">Data:${date}</p>
                 <p class="card-text" id="title" >${title}</p>
               </div>
           </div>

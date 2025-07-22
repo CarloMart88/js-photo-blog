@@ -1,9 +1,8 @@
 const lista = document.getElementById('lista')
 
 const takeOut = document.querySelector('.none')
- 
-//takeOut.classList.remove('none')
 
+const button = document.querySelector('.btn-primary')
 
 
 const Api = 'https://lanciweb.github.io/demo/api/pictures/'
@@ -48,6 +47,11 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
         })
         
       })
+
+      button.addEventListener('click' , () => {
+        takeOut.classList.add('none')
+      })
+
   })
 
 

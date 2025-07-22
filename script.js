@@ -41,19 +41,19 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
 
       console.log(cards)
 
-      cards.forEach((carta) => {
+      cards.forEach((carta , indice ) => {
         carta.addEventListener('click', () => {
           takeOut.classList.remove('none')
         })
         
       })
 
-      button.addEventListener('click' , () => {
-        takeOut.classList.add('none')
-      })
+      
 
   })
 
 
-
+      button.addEventListener('click' , () => {
+        takeOut.classList.add('none')
+      })
 

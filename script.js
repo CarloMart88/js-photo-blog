@@ -5,6 +5,8 @@ const takeOut = document.querySelector('.none')
 const button = document.querySelector('.btn-primary')
 
 
+
+
 const Api = 'https://lanciweb.github.io/demo/api/pictures/'
 
 
@@ -13,10 +15,12 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
   axios.get(Api).then((resp) => {
 
   let result = resp.data
+
   console.log(result)
+ 
 
    for(let i = 0 ; i<result.length ; i++){
-  const { title , date , url } = result[i]
+  const { title , date , url , id } = result[i]
 
   const card = `
 
@@ -43,7 +47,10 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
 
       cards.forEach((carta , indice ) => {
         carta.addEventListener('click', () => {
-          takeOut.classList.remove('none')
+          takeOut.classList.remove('none');
+
+          
+
         })
         
       })
@@ -55,5 +62,6 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
 
       button.addEventListener('click' , () => {
         takeOut.classList.add('none')
+
       })
 

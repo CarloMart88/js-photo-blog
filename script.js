@@ -36,9 +36,19 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
     const immagini = document.querySelectorAll('.immagine')
     
     console.log(immagini)
+
+    immagini.forEach((elem) => {
+      console.log(elem)
+
+      elem.addEventListener('click', () => {
+        console.log(elem)
+      })
+    })
     
     
 
   })
+
+  //addEventListener()
   
 

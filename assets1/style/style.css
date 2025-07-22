@@ -51,6 +51,14 @@
   left: 45vw;
 }
 
-#immagine {
+.immagine {
   cursor: pointer;
+}
+
+.inblock {
+  display: block;
+}
+
+.none {
+  display: none;
 }

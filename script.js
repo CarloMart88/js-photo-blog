@@ -1,5 +1,8 @@
 const lista = document.getElementById('lista')
+
+const takeOut = document.querySelector('.none')
  
+//takeOut.classList.remove('none')
 
 
 
@@ -18,6 +21,8 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
 
   const card = `
 
+    
+
      <div class="col-12 col-md-6 col-lg-4 immagine">
           <div class="card position-relative">
             <img src="./assets1/img/pin.svg" class="position-absolute top-0 start-50 translate-middle">
@@ -32,23 +37,19 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
   ` 
     lista.innerHTML += card}
     
-    //recupero le immagini 
-    const immagini = document.querySelectorAll('.immagine')
-    
-    console.log(immagini)
+ 
+      const cards = document.querySelectorAll('.immagine')
 
-    immagini.forEach((elem) => {
-      console.log(elem)
+      console.log(cards)
 
-      elem.addEventListener('click', () => {
-        console.log(elem)
+      cards.forEach((carta) => {
+        carta.addEventListener('click', () => {
+          takeOut.classList.remove('none')
+        })
+        
       })
-    })
-    
-    
-
   })
 
-  //addEventListener()
-  
+
+
 

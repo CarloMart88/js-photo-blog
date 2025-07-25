@@ -51,6 +51,7 @@
   height: 600px;
 }
 
+
 .fix {
   top: 80vh;
   left: 50vw;
@@ -59,6 +60,14 @@
 
 .immagine {
   cursor: pointer;
+}
+
+.effect:hover {
+  transform: rotate(10deg);
+  transition: 0.5s;
+  box-shadow: 10px 10px 16px rgba(9, 9, 9, 0.5);
+  
+  
 }
 
 .inblock {

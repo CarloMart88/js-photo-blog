@@ -30,7 +30,7 @@ const Api = 'https://lanciweb.github.io/demo/api/pictures/'
     
 
      <div class="col-12 col-md-6 col-lg-4 immagine">
-          <div class="card position-relative">
+          <div class="card position-relative effect">
             <img src="./assets1/img/pin.svg" class="position-absolute top-0 start-50 translate-middle">
             <img src="${url}" class="card-img-top">
               <div class="card-body">

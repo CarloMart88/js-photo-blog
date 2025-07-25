@@ -46,9 +46,15 @@
   cursor: pointer;
 }
 
+.size {
+  width: 600px;
+  height: 600px;
+}
+
 .fix {
   top: 80vh;
-  left: 45vw;
+  left: 50vw;
+  translate: -50% , -50%;
 }
 
 .immagine {
@@ -61,4 +67,39 @@
 
 .none {
   display: none;
+}
+
+
+/* From Uiverse.io by Yashwanthnaini */ 
+button {
+ border: none;
+ border-radius: 20px;
+ background: linear-gradient(32deg,#ffe4b5,#ffd580 ,#87cefa ,#03a9f4);
+ transition: all 1.5s ease;
+ font-family: 'Ropa Sans', sans-serif;
+ font-weight: bold;
+ letter-spacing: 0.05rem;
+ padding: 0;
+ position: absolute;
+ bottom: 13vh;
+
+
+}
+
+button span {
+ display: inline-block;
+ padding: 15px 35px;
+ font-size: 17px;
+ border-radius: 20px;
+ background: #ffffff10;
+ backdrop-filter: blur(20px);
+ transition: 0.4s ease-in-out;
+ transition-property: color;
+ height: 100%;
+ width: 100%;
+}
+
+button span:hover {
+ backdrop-filter: blur(0px);
+ color: #ffffff;
 }
